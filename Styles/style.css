@@ -1,0 +1,271 @@
+:root{
+    --main-background-color: #B4C5E4;
+    --secondary-background-color: #3C3744;
+    --tertiary-background-color: #E1BB80;
+    --navbar-color: #3066BE;
+    --navbar-shadow: #090C9B;
+    --nav-link-color: #3C3744;
+}
+
+img{
+    /* Box Properties */
+    max-width: 100%;
+    margin-inline: auto;
+}
+
+body{
+    /* Box Properties */
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+
+    /* Text and Font Properties */
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Tahoma, sans-serif;
+    font-family: YoungSerif, serif;
+    line-height: 3ch;
+
+    /* Colour Properties */
+    background-color: var(--main-background-color);
+
+    /* Grid Properties */
+    display: grid;
+    grid-template-rows: 10% 90% 15%;
+}
+
+header{
+    /* Box Properties */
+    width: 100%;
+
+    /* Colour Properties */
+    color: white;
+    background-color: var(--secondary-background-color);
+}
+
+footer{
+    /* Box Properties */
+    width: 100%;
+
+    /* Colour Properties */
+    color: white;
+    background-color: var(--secondary-background-color);
+}
+
+main{
+    /* Box Properties */
+    width: 100%;
+
+    /* Grid Properties */
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-auto-columns: fit-content; */
+    grid-template-columns: 2fr 9fr;
+}
+
+.myinfo{
+    /* Box Properties */
+    padding-inline: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    /* Overflow Properties */
+    overflow: auto;
+
+    /* Text and Font Properties */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navigation_menu{
+    /* Box Properties */
+    height: 100%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+nav{
+    /* Box Properties */
+    height: calc(100% - 4px);
+    padding-inline: 1vw;
+    box-shadow: 0px 0px 2px 1px var(--navbar-shadow);
+
+    /* Color Properties */
+    background-color: var(--navbar-color);
+
+    /* Flex Properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    /* Text and Font Properties */
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav > a{
+    /* Text and Font Properties */
+    text-decoration: none;
+    font-weight: 600;
+
+    /* Colour Properties */
+    color: var(--main-background-color);
+
+    /* Transition Properties */
+    transition-duration: 100ms;
+    transition-timing-function: ease-in;
+
+}
+
+nav > a:hover{
+    /* Box Properties */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 100vh;
+
+    /* Colour Properties */
+    color: var(--nav-link-color);
+    background-color: var(--main-background-color);
+}
+
+.myimage > img{
+    /* Box Properties */
+    max-width: 30%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-radius: 100vh;
+
+    /* Transition Properties */
+    transition-duration: 100ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.myimage > img:hover{
+    /* Box Properties */
+    max-width: 30%;
+    padding: 2vh 1vw 2vh 1vw;
+    border: 1px solid black;
+    border-radius: 100vh;
+}
+
+.education_image > img{
+    /* Box Properties */
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-radius: 1vh;
+
+    /* Transition Properties */
+    transition-duration: 100ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.education_image > img#school{
+    /* Box Properties */
+    width: 50vw;
+    max-width: 100%;
+}
+
+.education_image > img#school:hover{
+    /* Box Properties */
+    width: 51vw;
+    max-width: 110%;
+    padding: 1.5vh 0.5vw 1.5vh 0.5vw;
+    border: 1px solid black;
+    border-radius: 1vh;
+}
+
+.basic_headers{
+    /* Text and Font Properties */
+    font-family: YoungSerif, serif;
+    text-decoration: underline;
+}
+
+ul{
+    /* Box Properties */
+    width: 15ch;
+
+    /* Display Properties */
+    display: inline-block;
+
+    /* Text and Font Properties */
+    text-align: left;
+}
+
+li:hover{
+    font-size: 1.3em;
+}
+
+.project-link{
+    /* Font and Text Properties */
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+
+    /* Display Properties */
+    display: inline;
+
+    /* Colour Properties */
+    color: var(--nav-link-color);
+}
+
+.project-link:visited{
+    /* Colour Properties */
+    color: var(--nav-link-color);
+}
+
+#project-list{
+    /* Box Properties */
+    width: 60ch;
+}
+
+@media only screen and (max-width: 750px){
+    body{
+        /* Text and Font Properties */
+        font-size: 1rem;
+
+        /* Grid Properties */
+        grid-template-rows: 15% 70% 15%;
+    }
+
+    .navigation_menu{
+        /* Text and Font Properties */
+        font-size: 1rem;
+    }
+
+    .myimage > img{
+        /* Box Preoperties */
+        max-width: 30vw;
+        padding: none;
+    }
+
+    .myimage > img:hover{
+        /* Box Properties */
+        max-width: 31vw;
+        padding: 1vh 1vw 1vh 1vw;
+        border: 1px solid black;
+        border-radius: 100vh;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    body{
+        /* Box Properties */
+        height: 100vh;
+
+        /* Text and Font Properties */
+        font-size: 1rem;
+
+        /* Grid Properties */
+        grid-template-rows: 15% 70% 15%;
+    }
+
+    .navigation_menu{
+        /* Text and Font Properties */
+        font-size: 0.75rem;
+        text-shadow: 0px 1.5px var(--nav-link-color);
+    }
+
+    a:hover{
+        /* Text and Font Properties */
+        text-shadow: none;
+    }
+}

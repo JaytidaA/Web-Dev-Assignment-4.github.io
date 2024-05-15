@@ -1,0 +1,10 @@
+.fa-html5{ color: #e34f26; }
+.fa-css3-alt{ color: #002561; }
+.fa-js{ color: #f7df1e; }
+.fa-node-js{ color: #44883e; }
+.fa-c{ color: #3d98fa; text-shadow: 1px 1px #0050c0; }
+
+#hover-color-1 > :nth-child(1):hover{ color: #bb1212; }
+#hover-color-1 > :nth-child(2):hover{ color: #007d66; }
+#hover-color-1 > :nth-child(3):hover{ color: #ffa500; }
+#hover-color-1 > :nth-child(4):hover{ color: #808080; }
